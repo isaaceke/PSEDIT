@@ -1,0 +1,45 @@
+{
+  "manifest_version": 3,
+  "name": "PSEdit AI Runtime",
+  "version": "0.2.0",
+  "description": "Browser-side runtime adapter for PSEdit.",
+  "permissions": [
+    "nativeMessaging",
+    "storage"
+  ],
+  "host_permissions": [
+    "https://chatgpt.com/*",
+    "https://chat.openai.com/*",
+    "https://chat.deepseek.com/*",
+    "https://gemini.google.com/*",
+    "https://grok.com/*",
+    "https://x.com/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://chatgpt.com/*",
+        "https://chat.openai.com/*",
+        "https://chat.deepseek.com/*",
+        "https://gemini.google.com/*",
+        "https://grok.com/*",
+        "https://x.com/*"
+      ],
+      "js": [
+        "protocol.js",
+        "adapters/deepseek.js",
+        "adapters/gemini.js",
+        "adapters/grok.js",
+        "adapters/chatgpt.js",
+        "content.js"
+      ],
+      "run_at": "document_idle"
+    }
+  ],
+  "action": {
+    "default_title": "PSEdit AI Runtime"
+  }
+}

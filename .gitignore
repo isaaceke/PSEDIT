@@ -1,0 +1,27 @@
+__pycache__/
+*.pyc
+build/
+dist/
+*.spec
+.bak/
+.env
+*.log
+# Executables and build outputs
+*.exe
+build/
+dist/
+*.spec
+
+# Python cache and logs
+__pycache__/
+*.pyc
+*.log
+
+# Backups, scratch pads & test outputs
+.bak/
+_misc/
+_old/
+
+# System / Os artifacts
+cd
+git

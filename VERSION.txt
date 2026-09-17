@@ -1,0 +1,3 @@
+PSEdit V12.0.0
+Native protocol: PSEDIT/2
+Browser extension: 0.2.0

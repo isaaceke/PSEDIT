@@ -1,0 +1,10 @@
+{
+    "name":  "com.psedit.bridge",
+    "description":  "PseDIT AI Runtime Native Messaging bridge",
+    "path": "C:\\\\Users\\\\HP\\\\Downloads\\\\PSEDIT\\\\PseDITBridge.bat",
+    "type":  "stdio",
+    "allowed_origins":  [
+                            "chrome-extension://ccfjhlgddhaagncmcoefnfmlmnkokeih/"
+                        ]
+}
+
